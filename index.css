@@ -1,0 +1,96 @@
+*,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', 'Open Sans',  sans-serif;
+}
+/*HEAD SECTION */
+header{
+    background-color:rgba(140, 0, 51, 0.87);
+    padding:50px 0;
+    color:#fff;
+}
+.sub-content{
+    text-align: center;
+    margin:0 auto;
+}
+img{
+    border-radius: 48%;
+    width:200px;
+}
+.sub-content i{
+    margin-right:0.5rem;
+}
+.sub-content ul{
+    list-style: none;
+    display: flex;
+    justify-content:center
+}
+.sub-content li{
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+/* .main-content is used both in the head and body section */
+.main-content{
+    width:85%;
+    margin:0 auto;
+}
+
+/*BODY SECTION*/
+.info-content{
+    padding:20px;
+}
+.main-main-content{
+    padding:20px;
+}
+.main-main-content h2{
+    color:rgba(140, 0, 51, 0.87);  
+    border-bottom: 2px solid rgba(140, 0, 51, 0.87);
+    margin-bottom: 10px;
+}
+.main-main-content-container{
+    display: flex;
+    justify-content: space-between;
+}
+.main-main-content-container ul{
+    list-style-position: inside;
+}
+.main-main-content-date{
+    display: flex;
+    justify-content: space-between;
+}
+.main-main-content h3{
+    padding:5px 0;
+}
+.main-main-content-section{
+    padding:10px 0;
+}
+.main-main-content-section a{
+    font-size: 1rem;
+    text-decoration: none;
+    color:#000;
+}
+
+@media(max-width:760px) {
+    .main-content{
+        width:100%;
+    }
+    .main-main-content-date{
+        display: flex;
+        flex-direction: column;
+    } 
+    .sub-content ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:540px){
+    .main-main-content-container{
+        display: flex;
+       flex-direction: column;
+    }
+}
